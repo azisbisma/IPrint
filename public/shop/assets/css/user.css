@@ -1,0 +1,103 @@
+.header .navbar-cart .login{
+position: relative;
+  padding-left: 50px;
+  margin-right: 35px;
+  }
+
+
+  
+  .header .navbar-cart .login:hover .main-btn {
+    color: #fff;
+    background-color: #0167F3;
+    border-color: transparent;
+  }
+  
+  .header .navbar-cart .login .main-btn {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    padding-left: 1%;
+  }
+  
+  .header .navbar-cart .login:hover .login-item, .header .navbar-cart .login .login-item.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .header .navbar-cart .login .login-item {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    padding: 20px 25px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 99;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+  
+  @media (max-width: 767px) {
+    .header .navbar-cart .login .login-item {
+      width: 250px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header .navbar-cart .login .login-item {
+      top: 68px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header .navbar-cart .login .login-item {
+      top: 66px;
+    }
+  }
+  
+  .header .navbar-cart .login .login-item .dropdown-login-header {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  
+  .header .navbar-cart .login .login-item .dropdown-login-header span {
+    text-transform: capitalize;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  
+  .header .navbar-cart .login .login-item .login-list li {
+    overflow: hidden;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .header .navbar-cart .login .login-item .login-list li a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #081828;
+  }
+  
+  .header .navbar-cart .login .login-item .login-list li a:hover{
+    color: #0167F3;
+  }
