@@ -26,5 +26,8 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useBootstrap();
         Product::observe(ProductObserver::class);
         Carbon::setLocale('id');
+            if ($this->app->environment('production')) {
+        \URL::forceScheme('https');
+        }
     }
 }
