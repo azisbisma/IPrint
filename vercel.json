@@ -5,23 +5,25 @@
   "builds": [
     {
       "src": "public/index.php",
-      "use": "@vercel/php" 
+      "use": "@vercel/php"
     }
   ],
 
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.6.0" 
-    }
-  },
-  
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "public/index.php" 
+      "dest": "public/index.php"
     }
   ],
-
+  
   "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "true",
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "VIEW_COMPILED_PATH": "/tmp",
+    "CACHE_DRIVER": "array",
+    "SESSION_DRIVER": "cookie",
+    "LOG_CHANNEL": "stderr"
   }
 }
