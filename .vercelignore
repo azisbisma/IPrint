@@ -1,0 +1,20 @@
+# IGNORE LARAVEL DEVELOPMENT DEPENDENCIES
+/vendor
+
+# IGNORE FRONTEND/NODE DEPENDENCIES
+/node_modules
+
+# IGNORE TEMPORARY/CACHE FILES
+/storage
+/bootstrap/cache
+
+# IGNORE CONFIGURATION FILES
+.env
+.git
+.github
+
+# IGNORE PUBLIC/FRONTEND ASSETS YANG TIDAK PERLU
+/public/hot
+/public/storage 
+# Catatan: Jika Anda menggunakan symlink, public/storage harus dihapus.
+# Semua file yang perlu diakses harus ada di public secara langsung.
