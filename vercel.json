@@ -6,14 +6,12 @@
     {
       "src": "public/index.php",
       "use": "@vercel/php" 
-      // Menggunakan Vercel PHP Builder
     }
   ],
 
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.6.0" 
-      // Ini untuk serverless function, mungkin tidak diperlukan lagi jika menggunakan "builds"
     }
   },
   
@@ -21,11 +19,9 @@
     {
       "src": "/(.*)",
       "dest": "public/index.php" 
-      // Arahkan ke index.php di public yang akan diproses oleh builder
     }
   ],
 
   "env": {
-    // Variabel ENV Anda
   }
 }
